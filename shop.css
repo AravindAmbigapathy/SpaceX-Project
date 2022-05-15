@@ -1,0 +1,218 @@
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    border: 0.5px solid rgb(21, 18, 18);
+    border-top: 2px solid white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+body {
+    margin: 0%;
+}
+
+* {
+    font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 13px;
+    background-color: black;
+    color: white;
+}
+.navbar{
+    position: sticky;
+}
+
+nav {
+    background-color: black;
+}
+
+.nav-link {
+    font-size: 13px;
+    font-size: small;
+    color: white;
+    font-weight: 550;
+}
+
+.nav-link:hover {
+    color: white;
+
+}
+
+.account,
+.search {
+    color: #939393;
+}
+
+.account:hover,
+.search:hover {
+    color: white;
+}
+
+.dropdown-content a {
+    font-weight: 300;
+}
+
+.dropdown-content a:hover {
+    color: #939393;
+
+}
+
+main {
+    margin-top: -2%;
+    background-size: 100% 100%;
+    height: 400px;
+    color: white;
+    background-image: url('https://cdn.shopify.com/s/files/1/0261/2615/5855/files/SpaceX_Store_Header_8bea78f5-04fb-49cd-8fa7-62b9c50b980d_1400x.jpg?v=1566589024');
+}
+
+main p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.features {
+    background-color: black;
+    color: white;
+}
+
+.card {
+    width: 130px;
+    height: 195px;
+    position: relative;
+    display: inline-block;
+}
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.card:hover .img-top {
+    display: inline;
+}
+
+.img1 {
+    background-image: url('https://cdn.shopify.com/s/files/1/0261/2615/5855/products/MENS-oocupymars-black-FRONT_900x900.png?v=1631725808');
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img2 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('https://shuvt.com/wp-content/uploads/2022/01/mockup-1000x1172.png');
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img3 {
+    background-image: url('https://www.kindpng.com/picc/m/678-6781240_spacex-falcon-heavy-flexfit-cap-spacex-falcon-heavy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.product h4 {
+    margin-left: 5%;
+    margin-top: 50%;
+    align-items: baseline;
+    color: white;
+    font-weight: 600;
+}
+
+.product button {
+    margin-left: 5%;
+    background-color: white;
+    color: black;
+    border: 1px white solid;
+}
+
+.product button:hover {
+    background-color: transparent;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
+
+footer {
+    height: 300px;
+    background-color: black;
+}
+
+footer p {
+    padding-top: 8%;
+    margin-left: 30%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer p a {
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 100;
+    color: white;
+    
+}
+
+footer p a:hover {
+    color: #5c5c5c;
+}
+
+span a{
+    text-decoration: none;
+    margin-left: 8%;
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 0.8em;
+    color:#5c5c5c ;
+}
+span a:hover{
+    color: white;
+}
