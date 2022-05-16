@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
     let passVal = pass.value
     for (let i = 0; i < store.length; i++) {
         if (store[i][1] === emailVal && store[i][2] === passVal) {
-            window.location.href='mainPage.html'
+            window.location.href='index.html'
             alert(`Hi ${store[i][0]},`)
 
         } else {
