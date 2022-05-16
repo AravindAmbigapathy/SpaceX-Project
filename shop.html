@@ -88,7 +88,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link ms-4" href="#">CART( <span class="cart-num"></span> )</a>
+              <a class="nav-link ms-4" href="#">CART(0)</a>
             </li>
           </ul>
         </form>
@@ -109,15 +109,41 @@
         <small></small>
         <h4 class="fs-6 text  fw-bolder">$45.00</h4>
         <small class="text-danger"></small>
-        <button class="btn-dark btn cart-btn cartButton">Add to Cart</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-dark btn cart-btn cartButton">Add to Cart</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">CART</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body total">
+                <span>KID'S SPACEX SPACESUIT ONESIE</span>
+                <span class="ms-4"> qty=<input type="number" min="0" id="cartnum" max="10"> x 45$</span><br><br>
+                <span>UNISEX STARSHIP PULLOVER HOODIE</span>
+                <span class="ms-2"> qty=<input type="number" min="0" id="cartn" max="10"> x 65$</span><br>
+                <p id="calc" class="m-5"></p>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+
       <div class="col-6">
         <img class="prod1"
           src="https://cdn.shopify.com/s/files/1/0261/2615/5855/products/UNISEX_STARSHIP_PULLOVER_BONE_BACKcopy_700x.png?v=1634582513"
           width="90%" alt="">
-        <h4 class="fs-6 text my-5 fw-bolder">KID'S SPACEX SPACESUIT ONESIE</h4>
+        <h4 class="fs-6 text my-5 fw-bolder">UNISEX STARSHIP PULLOVER HOODIE</h4>
         <h4 class="fs-6 text  fw-bolder">$65.00</h4>
-        <button class="btn-dark btn">Add to Cart</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-dark btn cart-btn cartButton">Add to Cart</button>
 
       </div>
     </div>
